@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mehmetarikan.dgspuanhesaplama.MainActivity"
+    >
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="40px"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="50px"
+        android:layout_marginTop="100px"
+        android:orientation="vertical">
+
+
+
+
+        <!--Radio Grup Kullanılmayacak -->
+
+         <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+
+
+         </LinearLayout>
+
+
+             <!-- <RadioGroup
+
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal"
+                  android:visibility="visible">
+
+                  <TextView
+                      android:layout_width="91dp"
+                      android:layout_height="wrap_content"
+                      android:text="Alan seçiniz: " />
+
+                  <RadioButton
+                      android:id="@+id/sayisal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:buttonTint="@color/colorButton"
+                      android:text="Sayısal"
+                      android:textColorLink="@color/colorButton" />
+
+                  <RadioButton
+                      android:id="@+id/esitagirlik"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:buttonTint="@color/colorButton"
+                      android:text="Eşit Ağırlık"
+                      android:textColorLink="@color/colorPrimary" />
+
+                  <RadioButton
+                      android:id="@+id/sozel"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:buttonTint="@color/colorButton"
+                      android:text="Sözel"
+                      android:textColorLink="@color/colorPrimary" />
+              </RadioGroup>
+          </LinearLayout> -->
+        <!-- Türkçe -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="40px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:text="Türkçe(60):"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/td"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:hint="Doğru"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/ty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:hint="Yanlış"
+                android:inputType="number" />
+
+        </LinearLayout>
+        <!--Matematik -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:text="Matematik(60): "
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/md"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:hint="Doğru"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/my"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:hint="Yanlış"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <!-- Önlisans Başarı Puanı -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:text="Önlisans B.Puanı: "
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/op"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:hint="60.58"
+                android:inputType="number|numberSigned|numberDecimal" />
+
+        </LinearLayout>
+
+
+        <!-- Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="50px"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/hesapla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorButton"
+                android:onClick="hesaplaClick"
+                android:text="Hesapla"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="@string/onlisans" />
+
+        </LinearLayout>--
+    </LinearLayout>
+
+</RelativeLayout>

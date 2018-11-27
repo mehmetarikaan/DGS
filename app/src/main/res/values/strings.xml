@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DGS Puan Hesaplama</string>
+    <string name="title_activity_puan">Puan</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3194507391897588/8234109903</string>
+    <string name="onlisans">Önlisans Başarı puanı, 40 ile 80 arasında olmalıdır. Önlisans Başarı Puanı,
+        100 üzerinden hesaplanan diploma puanınızın 0.8 ile çarpılması sonucu bulunur.</string>
+    <string name="puanHesaplamaBilgi">Hesaplanan değerler ÖSYM\'nin yayınladığı 2019 yılı DGS kılavuzu baz alınarak yapılmaktadır.</string>
+</resources>

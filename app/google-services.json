@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1044888066395",
+    "firebase_url": "https://dgs-puan-hesaplama.firebaseio.com",
+    "project_id": "dgs-puan-hesaplama",
+    "storage_bucket": "dgs-puan-hesaplama.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044888066395:android:b9703f9ce96db19a",
+        "android_client_info": {
+          "package_name": "com.mehmetarikan.dgspuanhesaplama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1044888066395-7tsp4irn9bn00jg6uv2dkftgirgeirke.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mehmetarikan.dgspuanhesaplama",
+            "certificate_hash": "8c14062f24aabcf71e371b35c7181652241281e9"
+          }
+        },
+        {
+          "client_id": "1044888066395-sd2kq64ocvemphntojijp6713sat3ovt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3XG7QtPx5lBSjk4lInWzXLdYVwW-8hcw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1044888066395-sd2kq64ocvemphntojijp6713sat3ovt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-3194507391897588~5474540036"
+    }
+  ],
+  "configuration_version": "1"
+}
